@@ -150,3 +150,23 @@ footer {
   background-color: #8a9991;
   text-align: center;
 }
+
+/* Container for churros */
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.image {
+  flex-basis: 70%;
+  order: 2;
+}
+
+.text {
+  color: blue;
+  padding: right 20px;
+  font-family: 'Fredoka One', cursive;
+}
