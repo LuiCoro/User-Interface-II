@@ -51,18 +51,75 @@ table {
 /* End Of CSS Reset */
 body {
   background: url('/img/geometric-background_23-2148573776.jpg');
+  background-size: cover;
+  text-align: center;
+  max-width: 100%;
 }
 
+/* Button */
+button {
+  background-color: rgb(53, 48, 48);
+  color: rgb(255, 251, 0);
+  border: 5px solid black;
+}
+
+/* Text */
 h1 {
+  font-family: 'Russo One', sans-serif;
   font-size: 5em;
 }
 
-nav a {
-  color: White;
-  background-color: #333;
-  text-decoration:  none;
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
 }
 
+p {
+  font-family: 'Nerko One', cursive;
+  font-size: 20px;
+}
+/* Nav */
+nav {
+  background-color: #333;
+  text-decoration:  none;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+/* Containes / images */
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  padding: 5px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.big-img {
+  display: flex;
+  justify-content: center;
+}
+
+.big-img img {
+  border: 5px solid black;
+  width: fit-content;
+}
+
+/* footer */
 footer {
-  background: fixed rgb(124, 120, 124);
+  background: bottom rgb(124, 120, 124);
+  padding: 10px;
 }
