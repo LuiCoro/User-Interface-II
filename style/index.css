@@ -63,10 +63,23 @@ button {
   border: 5px solid black;
 }
 
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
 /* Text */
 h1 {
   font-family: 'Russo One', sans-serif;
   font-size: 5em;
+  color: rgb(255, 251, 2);
+  text-shadow: 5px 5px 5px black;
+}
+
+h1:hover {
+  color: white;
+  cursor:crosshair;
 }
 
 h2 {
@@ -81,19 +94,34 @@ p {
 }
 /* Nav */
 nav {
-  background-color: #333;
+  display: flex;
   text-decoration:  none;
-
 }
 
-a {
+nav a {
+  background-color: #333;
   color: white;
   text-decoration: none;
   font-size: 2em;
+  border: 2px solid black;
+  padding: 25px 25px;
+}
+
+nav a:hover {
+  color: yellow;
+  background-color: black;
 }
 
 /* Containes / images */
 #container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  padding: 5px;
+}
+
+.container2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -111,15 +139,40 @@ a {
 .big-img {
   display: flex;
   justify-content: center;
+  border: 5px solid black ;
+  width: fit-content;
+  align-items: center;
 }
 
 .big-img img {
-  border: 5px solid black;
-  width: fit-content;
+  width: 100%;
 }
 
 /* footer */
 footer {
   background: bottom rgb(124, 120, 124);
   padding: 10px;
+}
+
+/* Media */
+@media screen and (max-width: 500px) {
+  nav, footer, #container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box {
+    width: 50%;
+  }
+
+  footer {
+    background-color: rgb(34, 10, 245);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: url('/img/wp3537552.jpg');
+    background-size: cover;
+  }
 }
